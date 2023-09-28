@@ -10,21 +10,25 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container-lg ">
-        <div id="buttonDiv">
-            <input id="inputZip">
-            <button id="zipBtn">
-            </button>
+<body class="bodyEdits">
+    <div class="container">
+    <div id="row text-center">
+        <div class="col-lg-4 position-absolute top-50 start-50 translate-middle centeredColumn h-75 app-container">
+            <div id="buttonDiv">
+                <input class="w-25 position-relative top-0 start-50 translate-middle-x" id="inputZip" placeholder="Enter ZIP here">
+                <button class=" col-6 btn btn-primary position-absolute top-50 start-50 translate-middle" id="zipBtn">Submit</button>
+            </div>
+            <div id="displayError"></div> 
+            <div id="displayLocation"></div>
+            <div id="displayWeather">
+                <p id="currentWeather"></p>
+                <img id="currentImg">
+            </div>
+            <div id="displayTemp"></div>
         </div>
-        <div id="displayError"></div>
-        <div id="displayLocation"></div>
-        <div id="displayWeather">
-            <p id="currentWeather"></p>
-            <img id="currentImg">
-        </div>
-        <div id="displayTemp" </div>
-        </div>
+    </div>
+    <div>
+
 
 
 
@@ -38,8 +42,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-        <script defer src="./js/main.js"></script>
-        <script src="main.js"></script>
+        <script defer src="main.js"></script>
 </body>
 
 </html>
