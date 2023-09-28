@@ -1,7 +1,7 @@
 
-const
-
-
+const showWeather = document.getElementById('displayWeather');
+const displayTemp = document.getElementById('displayTemp');
+const displayDescrip = document.getElementById('displayDescrip')
 
 const zipCodeInput = document.getElementById('inputZip');
 const submitBtn = document.getElementById('zipBtn');
@@ -20,11 +20,15 @@ submitBtn.addEventListener('click', () => {
     console.log(apiUrl);
     axios.get(apiUrl)
         .then(response => {
-            const weatherData = response.data
-            console.log(response.data);
+            const weatherData = response.data;
+            const temperature = weatherData.main.temp;
+            const description = weatherData.weather[0].description;
+            displayTemp.innerHTML = `${temperature}`
+
         })
         .catch(error => {
             console.error('Error fetching data:', error);
+            divText.inner
         })
 })
 
