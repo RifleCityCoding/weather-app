@@ -21,9 +21,9 @@ submitBtn.addEventListener('click', () => {
     axios.get(apiUrl)
         .then(response => {
             const weatherData = response.data;
-            const temperature = weatherData.main.temp;
+            const temperature = Math.floor((weatherData.main.temp - 273.15)*1.8 + 32);
             const description = weatherData.weather[0].description;
-            displayTemp.innerHTML = `${temperature}`
+            showWeather.innerHTML = `${temperature}F`
 
         })
         .catch(error => {
