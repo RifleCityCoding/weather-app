@@ -1,0 +1,12 @@
+.centeredColumn {
+    background-color: aqua;
+}
+.bodyEdits {
+    background-color: black;
+}
+#inputZip{
+    margin-top: 4%;
+}
+#zipBtn {
+    margin-top: 13%;
+}
