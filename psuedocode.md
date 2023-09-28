@@ -29,6 +29,17 @@ We need at least 1 button for the user to click<br>
 ### What does our javascript need?
 ```
 Functions: <br>
-    onButtonClick
+    onButtonClick, displayWeather <br>
+
+Variables:
+    zipButton
+    errorBox
+    cityState
+    whatsWeather
+    weatherPic
+    currentTemp
+
+
+
     
 ```
