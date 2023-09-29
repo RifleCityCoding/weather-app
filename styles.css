@@ -6,7 +6,12 @@
 }
 #inputZip{
     margin-top: 4%;
+    margin-left: 20%;
 }
 #zipBtn {
-    margin-top: 13%;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+#mainDiv {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
